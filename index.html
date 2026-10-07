@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>J. F. Albacete Colombo</title>
 <meta name="description" content="Juan Facundo Albacete Colombo, X-ray astrophysicist (CONICET, Universidad Nacional de Río Negro): research, publications, teaching, CV and life.">
+<script data-goatcounter="https://donfaca.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <style>html{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -22,7 +23,7 @@
   --font-mono:"IBM Plex Mono", ui-monospace, monospace;
   --space-2:8px; --space-4:16px; --space-6:24px; --space-12:48px;
   --radius-sm:4px; --radius-md:8px; --page:#1f2824; --navbar:#000;
-  --bg-research:#e6ecf5; --bg-publications:#f3ead8; --bg-past:#ece7f0; --bg-teaching:#e3efe7; --bg-cv:#eceae4; --bg-life:#dcedee; --bg-novel:#f2e5e8; --bg-travels:#f4eadf;
+  --bg-research:#e6ecf5; --bg-talks:#eceee2; --bg-publications:#f3ead8; --bg-past:#ece7f0; --bg-teaching:#e3efe7; --bg-cv:#eceae4; --bg-life:#dcedee; --bg-novel:#f2e5e8; --bg-travels:#f4eadf;
   --map-land:#d9d3c6; --map-visited:#e9b48f; --map-line:#f6f4ef; --map-ocean:#e9eef4;
   --dot-home:#c2410c; --dot-study:#14213d; --dot-work:#0f6e78; --dot-trip:#7a4ea3;
 }
@@ -30,12 +31,12 @@
   --surface-100:#0e1320; --surface-200:#161d2e; --hairline:#2a3346;
   --ink:#e9ecf2; --ink-muted:#a3abbb;
   --night:#1c2a4f; --on-night:#f3f5f9; --on-night-muted:#c3cbdb;
-  --xray:#f59e5b; --ocean:#4fc3c9; --sand:#4a3f2a; --bg-research:#131c2f; --bg-publications:#221d13; --bg-past:#1c1828; --bg-teaching:#12221a; --bg-cv:#1a1c23; --bg-life:#0e2427; --page:#141a17; --bg-novel:#24161b; --bg-travels:#251c13; --map-land:#2f3a52; --map-visited:#8a4b26; --map-line:#0e1320; --map-ocean:#121a2b; --dot-home:#f59e5b; --dot-study:#e9ecf2; --dot-work:#4fc3c9; --dot-trip:#c39be8; color-scheme:dark } }
+  --xray:#f59e5b; --ocean:#4fc3c9; --sand:#4a3f2a; --bg-research:#131c2f; --bg-talks:#1c2015; --bg-publications:#221d13; --bg-past:#1c1828; --bg-teaching:#12221a; --bg-cv:#1a1c23; --bg-life:#0e2427; --page:#141a17; --bg-novel:#24161b; --bg-travels:#251c13; --map-land:#2f3a52; --map-visited:#8a4b26; --map-line:#0e1320; --map-ocean:#121a2b; --dot-home:#f59e5b; --dot-study:#e9ecf2; --dot-work:#4fc3c9; --dot-trip:#c39be8; color-scheme:dark } }
 :root[data-theme="dark"] {
   --surface-100:#0e1320; --surface-200:#161d2e; --hairline:#2a3346;
   --ink:#e9ecf2; --ink-muted:#a3abbb;
   --night:#1c2a4f; --on-night:#f3f5f9; --on-night-muted:#c3cbdb;
-  --xray:#f59e5b; --ocean:#4fc3c9; --sand:#4a3f2a; --bg-research:#131c2f; --bg-publications:#221d13; --bg-past:#1c1828; --bg-teaching:#12221a; --bg-cv:#1a1c23; --bg-life:#0e2427; --page:#141a17; --bg-novel:#24161b; --bg-travels:#251c13; --map-land:#2f3a52; --map-visited:#8a4b26; --map-line:#0e1320; --map-ocean:#121a2b; --dot-home:#f59e5b; --dot-study:#e9ecf2; --dot-work:#4fc3c9; --dot-trip:#c39be8; color-scheme:dark }
+  --xray:#f59e5b; --ocean:#4fc3c9; --sand:#4a3f2a; --bg-research:#131c2f; --bg-talks:#1c2015; --bg-publications:#221d13; --bg-past:#1c1828; --bg-teaching:#12221a; --bg-cv:#1a1c23; --bg-life:#0e2427; --page:#141a17; --bg-novel:#24161b; --bg-travels:#251c13; --map-land:#2f3a52; --map-visited:#8a4b26; --map-line:#0e1320; --map-ocean:#121a2b; --dot-home:#f59e5b; --dot-study:#e9ecf2; --dot-work:#4fc3c9; --dot-trip:#c39be8; color-scheme:dark }
 
 * { box-sizing:border-box; }
 body { background:var(--page); color:var(--ink); font-family:var(--font-sans); font-size:17px; line-height:28px; }
@@ -84,7 +85,7 @@ nav a:hover, nav a.on { color:var(--on-night); border-bottom-color:var(--xray); 
 /* Accordion sections */
 main { padding-block:var(--space-12); display:grid; gap:var(--space-4); }
 .sec { border:1px solid var(--hairline); border-radius:var(--radius-md); background:var(--surface-100); }
-#research { background:var(--bg-research); } #publications { background:var(--bg-publications); } #past { background:var(--bg-past); } #teaching { background:var(--bg-teaching); } #cv { background:var(--bg-cv); } #life { background:var(--bg-life); } #novel { background:var(--bg-novel); } #travels { background:var(--bg-travels); }
+#research { background:var(--bg-research); } #talks { background:var(--bg-talks); } #publications { background:var(--bg-publications); } #past { background:var(--bg-past); } #teaching { background:var(--bg-teaching); } #cv { background:var(--bg-cv); } #life { background:var(--bg-life); } #novel { background:var(--bg-novel); } #travels { background:var(--bg-travels); }
 .sec .toggle:hover { background:rgba(127,127,127,.08); }
 .sec .panel { border-top-color:rgba(127,127,127,.22); }
 .sec > h2 { margin:0; }
@@ -136,6 +137,33 @@ main { padding-block:var(--space-12); display:grid; gap:var(--space-4); }
 @media (max-width:720px) { .hl, .hl:nth-child(even) { grid-template-columns:1fr; } .hl:nth-child(even) .hl-fig { order:0; } .hl-title { font-size:24px; line-height:28px; } }
 @media (max-width:420px) { .nums { grid-template-columns:1fr 1fr; } }
 
+/* Talks */
+.talks { display:grid; gap:var(--space-4); margin-bottom:var(--space-4); }
+.talk { display:grid; grid-template-columns:150px minmax(0,1fr); gap:var(--space-6); background:var(--surface-100); border:1px solid var(--hairline); border-radius:var(--radius-md); padding:var(--space-4); }
+.talk-thumb { position:relative; overflow:hidden; aspect-ratio:3/4; max-width:100%; border-radius:var(--radius-sm); background:#14213d; color:#f6f4ef; padding:12px; display:flex; flex-direction:column; justify-content:flex-end; }
+.talk-thumb svg { position:absolute; inset:0; width:100%; height:100%; }
+.talk-thumb circle { fill:none; stroke:#b8c2d6; stroke-width:1; opacity:.45; } .talk-thumb circle.hot { stroke:#f59e5b; opacity:.9; }
+.tt-kind { position:absolute; top:12px; left:12px; font-family:var(--font-mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#f59e5b; }
+.tt-day { font-family:var(--font-display); font-size:56px; line-height:1; }
+.tt-mon { font-family:var(--font-mono); font-size:12px; color:#b8c2d6; text-transform:uppercase; letter-spacing:.06em; }
+.talk-body { min-width:0; display:flex; flex-direction:column; gap:var(--space-2); }
+.talk-body p { margin:0; }
+.talk-meta { font-family:var(--font-mono); font-size:12px; line-height:17px; color:var(--ink-muted); }
+.talk-title { font-family:var(--font-display); font-weight:500; font-size:26px; line-height:30px; margin:0; }
+.talk-sub { color:var(--ink-muted); }
+.talk-host { font-size:11px !important; }
+.talk-thumb .tt-year { font-size:40px; }
+.sub-n { font-family:var(--font-mono); font-size:12px; font-weight:400; color:var(--ink-muted); margin-left:6px; }
+.scis { list-style:none; margin:0 0 var(--space-4); padding:0; }
+.sci { display:grid; grid-template-columns:90px minmax(0,1fr) auto; gap:var(--space-4); align-items:baseline; padding:12px 0; border-top:1px solid var(--hairline); }
+.sci-y { font-family:var(--font-mono); font-size:12px; color:var(--ink-muted); font-variant-numeric:tabular-nums; }
+.sci-t { margin:0; font-family:var(--font-display); font-size:18px; line-height:24px; }
+.sci-e { margin:2px 0 0; font-size:14px; line-height:20px; color:var(--ink-muted); }
+.sci-l { font-family:var(--font-mono); font-size:12px; white-space:nowrap; }
+@media (max-width:620px) { .sci { grid-template-columns:1fr; gap:2px; } }
+.talk-empty { margin:0 0 var(--space-4) !important; }
+@media (max-width:620px) { .talk { grid-template-columns:1fr; } .talk-thumb { aspect-ratio:auto; min-height:120px; } }
+
 /* Novel */
 .novel { display:grid; grid-template-columns:minmax(0,240px) minmax(0,1fr); gap:var(--space-6); align-items:start; }
 .cover { max-width:100%; border-radius:var(--radius-sm); overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.25); }
@@ -186,7 +214,7 @@ main { padding-block:var(--space-12); display:grid; gap:var(--space-4); }
 .hero-mail { font-family:var(--font-mono); font-size:12.5px; color:#7cc7f2; text-decoration:none; letter-spacing:.02em; }
 .hero-mail:hover { text-decoration:underline; text-underline-offset:3px; }
 .hero-place { font-family:var(--font-mono); font-size:12px; color:var(--on-night-muted); letter-spacing:.03em; } .topbar nav { order:0; flex:1 1 auto; } .topbar .tools { flex:none; }
-@media (min-width:1000px) { nav ul { flex-wrap:nowrap; } nav a { white-space:nowrap; } }
+@media (min-width:1000px) { nav ul { flex-wrap:nowrap; column-gap:clamp(12px, 1.5vw, 24px); } nav a { white-space:nowrap; } .topbar { flex-wrap:nowrap; } }
 @media (max-width:999px) { .topbar { padding-block:10px; row-gap:8px; } .topbar nav { order:2; flex-basis:100%; min-width:0; overflow-x:auto; scrollbar-width:none; } .topbar nav::-webkit-scrollbar { display:none; } nav ul { flex-wrap:nowrap; gap:var(--space-4); padding-bottom:4px; } nav a { white-space:nowrap; } .topbar .tools { flex-direction:row; align-items:center; gap:10px; } }
 .lang { display:inline-flex; border:1px solid rgba(184,194,214,.45); border-radius:999px; padding:2px; gap:2px; }
 .lang button { all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:6px; padding:4px 10px; border-radius:999px; font-family:var(--font-mono); font-size:12px; line-height:16px; color:var(--on-night-muted); }
@@ -290,6 +318,7 @@ footer b { color:var(--on-night); font-weight:500; }
 <li><a data-es="Investigación" data-open="research" href="#research">Research</a></li>
 <li><a data-es="Destacados" data-open="highlights" href="#highlights">Highlights</a></li>
 <li><a data-es="Publicaciones" data-open="publications" href="#publications">Publications</a></li>
+<li><a data-es="Charlas" data-open="talks" href="#talks">Talks</a></li>
 <li><a data-es="Novela" data-open="novel" href="#novel">Novel</a></li>
 <li><a data-es="Trabajos previos" data-open="past" href="#past">Past Work</a></li>
 <li><a data-es="Docencia" data-open="teaching" href="#teaching">Teaching</a></li>
@@ -440,6 +469,135 @@ footer b { color:var(--on-night); font-weight:500; }
 </div>
 <ol class="pubs" id="pubs" reversed=""></ol>
 <div class="more"><button class="btn" data-es="Ver todos" id="morebtn" type="button">Show all</button></div>
+</div>
+</section>
+<section class="sec" id="talks">
+<h2><button aria-controls="p-talks" aria-expanded="false" class="toggle">
+<span><span class="eyebrow" data-es="Divulgación y congresos">Outreach and conferences</span><span class="t" data-es="Charlas">Talks</span></span>
+<span class="meta"><span class="n" data-es="22 charlas">22 talks</span><span class="chev"><svg viewBox="0 0 14 14"><path d="M2 5l5 5 5-5"></path></svg></span></span>
+</button></h2>
+<div class="panel" hidden="" id="p-talks">
+<p class="intro" data-es="Charlas para todo público sobre las estrellas y el Universo, y presentaciones científicas en congresos, seminarios y universidades.">Talks for general audiences about stars and the Universe, and scientific presentations at conferences, seminars and universities.</p>
+<details class="sub" open=""><summary><span><span data-es="Charlas de divulgación">Public talks</span> <span class="sub-n">10</span></span></summary>
+<div class="talks">
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day">3</span><span class="tt-mon" data-es="sep 2026">Sep 2026</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="3 de septiembre de 2026 · Biblioteca Museo Tello, Legislatura de Río Negro · Viedma · en español">3 September 2026 · Biblioteca Museo Tello, Legislatura de Río Negro · Viedma · in Spanish</p>
+<h3 class="talk-title">El presagio de los neutrinos</h3>
+<p class="talk-sub"><em>Una visión simplificada hacia el entendimiento de nuestro origen y destino.</em></p>
+<p data-es="Cómo se enciende una estrella, por qué brilla durante miles de millones de años y qué queda de ella cuando se apaga, desde las nubes moleculares hasta SN 1987A y Betelgeuse.">How a star ignites, why it shines for billions of years and what is left when it dies, from molecular clouds to SN 1987A and Betelgeuse.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1iKC3kp_FjkL-RS1AAhX85cfb21ImxO-8PDTez_UjY5Y/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day tt-year">2024</span><span class="tt-mon" data-es="nov">Nov</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="noviembre de 2024 · Charla abierta con sorteo de un ejemplar de la novela · en español">November 2024 · Public talk with a raffle of the novel · in Spanish</p>
+<h3 class="talk-title">Origen, evolución y muerte de las estrellas</h3>
+<p class="talk-sub"><em>Sobre cómo nuestro origen y destino dependen de las estrellas.</em></p>
+<p data-es="El ciclo de vida de las estrellas y por qué los elementos de los que estamos hechos se forjaron en su interior.">The life cycle of stars and why the elements we are made of were forged inside them.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1OfyeQWsfRuMgC7lXpfM4riPYRXiQaQsfJS5FjScLITI/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day tt-year">2024</span><span class="tt-mon" data-es="oct">Oct</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="octubre de 2024 · Charla de divulgación · en español">October 2024 · Public talk · in Spanish</p>
+<h3 class="talk-title">No estamos a salvo: ¡va a explotar!</h3>
+<p class="talk-sub"><em>Cuando la muerte de una estrella nos amenaza…</em></p>
+<p data-es="Qué le pasaría a la vida en la Tierra si una estrella masiva cercana explotara como supernova.">What would happen to life on Earth if a nearby massive star exploded as a supernova.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1MOFPUiq_EyVM3-md-WjWVOvgqwhFps9fUQEvj8_KY20/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day tt-year">2023</span><span class="tt-mon" data-es="sep">Sep</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="septiembre de 2023 · Museo de Bellas Artes Franklin Rawson · San Juan · Reunión Anual de la AAA · en español">September 2023 · Museo de Bellas Artes Franklin Rawson · San Juan · AAA annual meeting · in Spanish</p>
+<h3 class="talk-title">Nacimiento, vida, evolución y muerte de las estrellas</h3>
+
+<p data-es="Charla abierta en el marco de la Reunión Anual de la Asociación Argentina de Astronomía, vinculada a la novela.">Public lecture during the annual meeting of the Argentine Astronomical Society, linked to the novel.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1QlSjUD60FkB8_uICTjGlmjqr7wqOBboyW6Ab3RB62C4/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day">9</span><span class="tt-mon" data-es="jun 2023">Jun 2023</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="9 de junio de 2023 · Cervecería Liberarte · charla y firma de libros · en español">9 June 2023 · Cervecería Liberarte · talk and book signing · in Spanish</p>
+<h3 class="talk-title">Nacimiento, vida, evolución y muerte de las estrellas</h3>
+
+<p data-es="Charla astronómica informal seguida de la firma de la novela.">An informal astronomy talk followed by the signing of the novel.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1HU_r9peIlDT10FewPhyu8Tore1ud4Ar7-2JKQmpeezo/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day tt-year">2023</span><span class="tt-mon" data-es="abr">Apr</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="abril de 2023 · Planetario de la Ciudad de La Plata · Charlas de los viernes · en español">April 2023 · Planetario de la Ciudad de La Plata · Friday talks · in Spanish</p>
+<h3 class="talk-title">Estrellas masivas: nuestro origen y final</h3>
+
+<p data-es="Las estrellas masivas como origen y final de todo lo que nos rodea, y la ciencia detrás de la novela.">Massive stars as the origin and the end of everything around us, and the science behind the novel.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1rCkmMge3p5Q2MKdHpFGGTobmAkntFcIB1wS9MP_PFAY/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day">27</span><span class="tt-mon" data-es="feb 2021">Feb 2021</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="27 de febrero de 2021 · Catamarán de Viedma · sobre el río Negro con luna llena · en español">27 February 2021 · Catamarán de Viedma · on the Río Negro under a full moon · in Spanish</p>
+<h3 class="talk-title">Formación, vida y muerte de las estrellas</h3>
+
+<p data-es="Charla astronómica a bordo, desde las nubes donde nacen las estrellas hasta sus etapas finales.">An astronomy talk on board, from star-forming clouds to the final stages of stars.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1VJQIkS0dwzZKRl_snE8-oW0JMb3FDU0tX4kSwnhabrc/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day tt-year">2020</span><span class="tt-mon" data-es="ene">Jan</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="enero de 2020 · Charla de divulgación · en español">January 2020 · Public talk · in Spanish</p>
+<h3 class="talk-title">Formación de estrellas y planetas</h3>
+
+<p data-es="Cómo nacen las estrellas y sus sistemas planetarios a partir de las nubes interestelares.">How stars and their planetary systems are born from interstellar clouds.</p>
+<div class="btns"><a class="btn-link primary" href="https://drive.google.com/file/d/1OM3VqcfA6LWR-IlRI3Zuw3kifjVCnb9M/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day tt-year">2010</span><span class="tt-mon" data-es="oct">Oct</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="octubre de 2010 · Charla de divulgación · en español">October 2010 · Public talk · in Spanish</p>
+<h3 class="talk-title">Origen de las partículas más energéticas del universo</h3>
+<p class="talk-sub"><em>Rayos cósmicos y el Observatorio Pierre Auger</em></p>
+<p data-es="Qué son los rayos cósmicos, de dónde vienen y cómo los detecta el Observatorio Pierre Auger en Malargüe.">What cosmic rays are, where they come from and how the Pierre Auger Observatory in Malargüe detects them.</p>
+<div class="btns"><a class="btn-link primary" href="https://drive.google.com/file/d/1TgigbBpkdnQhb43yOdX2v_bm3_pYYTmm/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+<article class="talk">
+<div class="talk-thumb" aria-hidden="true"><span class="tt-kind" data-es="Divulgación">Public talk</span><span class="tt-day">11</span><span class="tt-mon" data-es="dic 2009">Dec 2009</span><svg viewBox="0 0 120 120"><circle cx="120" cy="0" r="40"/><circle cx="120" cy="0" r="70"/><circle class="hot" cx="120" cy="0" r="100"/></svg></div>
+<div class="talk-body">
+<p class="talk-meta" data-es="11 de diciembre de 2009 · Viedma · en español">11 December 2009 · Viedma · in Spanish</p>
+<h3 class="talk-title">El origen de los elementos</h3>
+
+<p data-es="Del Big Bang a los hornos estelares: de dónde vienen el hidrógeno, el helio y los elementos pesados.">From the Big Bang to stellar furnaces: where hydrogen, helium and the heavy elements come from.</p>
+<div class="btns"><a class="btn-link primary" href="https://docs.google.com/presentation/d/1Xv7UeOpbOObt2d4AyS1JQO8Aiuq8ZNbvR6zYYQalY_k/view" rel="noopener" target="_blank" data-es="Ver la presentación">View the slides</a></div>
+</div>
+</article>
+</div>
+</details>
+<details class="sub"><summary><span><span data-es="Charlas científicas">Scientific talks</span> <span class="sub-n">12</span></span></summary>
+<ol class="scis">
+<li class="sci"><span class="sci-y" data-es="sep 2025">Sep 2025</span><div><p class="sci-t">Diffuse X-ray emission in Westerlund 1: investigating the hot environment of a massive stellar starburst</p><p class="sci-e" data-es="Reunión Anual de la Asociación Argentina de Astronomía · Mendoza">Annual meeting of the Argentine Astronomical Society (AAA) · Mendoza</p></div><a class="sci-l" href="https://docs.google.com/presentation/d/1TpxKmEfyT9JladYQM3pqcMrFsmBtL6nW00cZ_sA7HcA/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="oct 2018">Oct 2018</span><div><p class="sci-t">First observational evidence of diffuse X-ray haloes around (some) evolved massive stars in the Cygnus OB2 association</p><p class="sci-e" data-es="Reunión de la SOCHIAS · Chile">SOCHIAS meeting · Chile</p></div><a class="sci-l" href="https://drive.google.com/file/d/1NujIo7F0lIiD4y4q_D8h8Ux01eh39nII/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="nov 2016">Nov 2016</span><div><p class="sci-t">X-ray diffuse emission with Chandra ACIS-I: from star-forming regions to supernova remnants</p><p class="sci-e" data-es="La Plata">La Plata</p></div><a class="sci-l" href="https://drive.google.com/file/d/1MaZFDE4w84TrIRGYt2pKSRHcgE70mjxE/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="sep 2012">Sep 2012</span><div><p class="sci-t">Are luminous X-ray sources well treated? Photon pile-up in X-ray detectors</p><p class="sci-e" data-es="55ª Reunión Anual de la AAA · Mar del Plata">55th AAA annual meeting · Mar del Plata</p></div><a class="sci-l" href="https://drive.google.com/file/d/14tC29S04XaBzrNsFTaqBgGV6HiYFVIZZ/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="sep 2008">Sep 2008</span><div><p class="sci-t">An X-ray survey of low-mass stars in Trumpler 16 with Chandra</p><p class="sci-e" data-es="51ª Reunión Anual de la AAA · también presentada en la Universidad Complutense de Madrid">51st AAA annual meeting · also presented at Universidad Complutense de Madrid</p></div><a class="sci-l" href="https://drive.google.com/file/d/1w-Vw2b_zgyitSdZq22CzlYH1rEzVK_Sd/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="may 2008">May 2008</span><div><p class="sci-t">Studying star-forming regions with X-ray data (two lectures)</p><p class="sci-e" data-es="Universidad Complutense de Madrid">Universidad Complutense de Madrid</p></div><a class="sci-l" href="https://drive.google.com/file/d/1LASULwTCWB_W06NHu2NCuiOYuh1GmmU4/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="2008">2008</span><div><p class="sci-t">Astrofísica de rayos X en el Universo</p><p class="sci-e" data-es="I Jornada de Investigación del CURZA – Universidad Nacional del Comahue · Viedma">1st Research Day, CURZA – Universidad Nacional del Comahue · Viedma</p></div><a class="sci-l" href="https://drive.google.com/file/d/10-XgRzhcpBuqgIle-c74rdH3nsr_DlIz/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="2007">2007</span><div><p class="sci-t">Unveiling young stars with Chandra: the Cygnus OB2 and Trumpler 16 star-forming regions</p><p class="sci-e" data-es="50ª Reunión Anual de la AAA · Malargüe">50th AAA annual meeting · Malargüe</p></div><a class="sci-l" href="https://drive.google.com/file/d/1wgsXNCzK4ZyOVcSWdw0tpuC3fuRZnbWi/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="nov 2007">Nov 2007</span><div><p class="sci-t">Astronomía de rayos X: el mayor impacto en el conocimiento del universo</p><p class="sci-e" data-es="FCAG – Universidad Nacional de La Plata">FCAG – Universidad Nacional de La Plata</p></div><a class="sci-l" href="https://drive.google.com/file/d/1CXRyz22-c9xla5Iq-vRYONmrztqs8Q2P/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="2007">2007</span><div><p class="sci-t">X-ray analysis of two galactic star-forming regions</p><p class="sci-e" data-es="INAF – Osservatorio Astronomico di Palermo, reunión interna">INAF – Osservatorio Astronomico di Palermo, internal meeting</p></div><a class="sci-l" href="https://drive.google.com/file/d/1xW2SVOXMP4-84y05TOxXFIIvo_QQAeeI/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="2005">2005</span><div><p class="sci-t">X-ray properties of very young stars: the massive star-forming region Cygnus OB2</p><p class="sci-e" data-es="INAF – Osservatorio Astronomico di Palermo">INAF – Osservatorio Astronomico di Palermo</p></div><a class="sci-l" href="https://drive.google.com/file/d/1xkDcL7prmOjBFCWIGcyy5Q9wKDq0dISB/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+<li class="sci"><span class="sci-y" data-es="nov 2004">Nov 2004</span><div><p class="sci-t">An X-ray view of early-type stars: XMM-Newton observations of the NGC 3372 star-forming region</p><p class="sci-e" data-es="Palermo, Italia">Palermo, Italy</p></div><a class="sci-l" href="https://drive.google.com/file/d/1Z40m5MXEQ3aNVW-qvl1wNUWjq6gBrr33/view" rel="noopener" target="_blank" data-es="Diapositivas">Slides</a></li>
+</ol>
+</details>
 </div>
 </section>
 <section class="sec" id="novel">
@@ -834,7 +992,7 @@ document.addEventListener("click", e => {
   e.preventDefault(); const id = a.dataset.open; setOpen(id, true);
   document.getElementById(id).scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"});
 });
-const h = location.hash.slice(1); if (["research","highlights","publications","novel","past","teaching","cv","life","travels"].includes(h)) setOpen(h, true);
+const h = location.hash.slice(1); if (["research","highlights","publications","talks","novel","past","teaching","cv","life","travels"].includes(h)) setOpen(h, true);
 
 let VISITS = null;
 let VISITS_GC = null;
@@ -852,17 +1010,14 @@ function renderVisits(){
 // Visit counter (GoatCounter). Create a free account at goatcounter.com, put your code below,
 // and in GoatCounter settings enable "Allow adding visitor counts on your website".
 const GOATCOUNTER = "donfaca";
-if (GOATCOUNTER) {
-  const sc = document.createElement("script");
-  sc.async = true; sc.src = "https://gc.zgo.at/count.js";
-  sc.dataset.goatcounter = "https://" + GOATCOUNTER + ".goatcounter.com/count";
-  document.head.appendChild(sc);
-  fetch("https://" + GOATCOUNTER + ".goatcounter.com/counter/TOTAL.json")
+// The official GoatCounter tag is in <head>; here we only read the public total.
+function loadVisits(){
+  fetch("https://" + GOATCOUNTER + ".goatcounter.com/counter/TOTAL.json", { cache: "no-store" })
     .then(r => r.status === 404 ? { count: "0" } : (r.ok ? r.json() : null))
-    .then(d => { if (!d) return;
-      VISITS_GC = d.count; renderVisits(); })
+    .then(d => { if (!d) return; VISITS_GC = d.count; renderVisits(); })
     .catch(() => {});
 }
+window.addEventListener("load", () => { loadVisits(); setTimeout(loadVisits, 15000); });
 
 // Copy email
 document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", () => {
