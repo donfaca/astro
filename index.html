@@ -1012,10 +1012,15 @@ function renderVisits(){
 const GOATCOUNTER = "donfaca";
 // The official GoatCounter tag is in <head>; here we only read the public total.
 function loadVisits(){
-  fetch("https://" + GOATCOUNTER + ".goatcounter.com/counter/TOTAL.json", { cache: "no-store" })
-    .then(r => r.status === 404 ? { count: "0" } : (r.ok ? r.json() : null))
-    .then(d => { if (!d) return; VISITS_GC = d.count; renderVisits(); })
-    .catch(() => {});
+  const base = "https://" + GOATCOUNTER + ".goatcounter.com/counter/";
+  const get = path => fetch(base + path + ".json", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : null).catch(() => null);
+  const num = d => d && d.count ? parseInt(String(d.count).replace(/[^0-9]/g, ""), 10) || 0 : 0;
+  // TOTAL can lag behind; the home-page path "/" is updated sooner. Show the larger one.
+  Promise.all([get("TOTAL"), get(encodeURIComponent("/"))]).then(([a, b]) => {
+    const n = Math.max(num(a), num(b));
+    VISITS_GC = n.toLocaleString(LANG === "es" ? "es-AR" : "en-US"); renderVisits();
+  });
 }
 window.addEventListener("load", () => { loadVisits(); setTimeout(loadVisits, 15000); });
 
